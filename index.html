@@ -1,199 +1,129 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>JOSE MOTO WEAR</title>
-  <meta name="description" content="JOSE MOTO WEAR • Sticker & Aksesuar • Özel sipariş için DM veya Mail.">
-  <link rel="icon" href="saydam.png" type="image/png" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JOSE MOTO WEAR</title>
 
-  <style>
-    :root {
-      --panel: #0c0c0c;
-      --fg: #fff;
-      --muted: #bdbdbd;
-      --accent: #00ffff;
-      --stroke: #123;
-      --glow: 0 0 18px rgba(0,255,255,.35);
-    }
+<link rel="icon" href="saydam.png">
 
-    * { box-sizing: border-box; }
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  background:#0b0b0b;
+  color:#fff;
+  font-family:system-ui;
+  display:flex;
+  justify-content:center;
+  padding:40px 16px;
+}
+.card{
+  width:min(520px,100%);
+  background:#0f0f0f;
+  border-radius:22px;
+  box-shadow:0 0 35px rgba(0,255,255,.25);
+  overflow:hidden;
+}
+.banner{text-align:center;padding:28px 0;border-bottom:1px solid #222}
+.banner img{height:90px}
+.body{padding:24px}
+h1{text-align:center;margin:8px 0}
+.bio{text-align:center;color:#aaa;margin-bottom:22px}
 
-    body {
-      margin: 0;
-      background: #111;
-      color: var(--fg);
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      padding: 40px 16px;
-      min-height: 100vh;
-    }
+.link{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:18px;
+  margin:12px 0;
+  background:#151515;
+  border-radius:14px;
+  border:1px solid #222;
+  text-decoration:none;
+  color:#fff;
+}
+.icon{width:46px;height:46px;border-radius:8px}
+.ttl{font-weight:800}
+.sub{font-size:.9rem;color:#aaa}
 
-    .card {
-      width: min(540px, 100%);
-      background: var(--panel);
-      border: 1px solid var(--stroke);
-      border-radius: 20px;
-      box-shadow: 0 0 25px rgba(255,255,255,.05),
-                  0 0 10px rgba(0,255,255,.18);
-      overflow: hidden;
-    }
-
-    .card__banner {
-      padding: 28px 0 18px;
-      text-align: center;
-      border-bottom: 1px solid rgba(255,255,255,.05);
-    }
-
-    .card__banner img {
-      height: 95px;
-      object-fit: contain;
-    }
-
-    .card__body {
-      padding: 24px;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 6px 0 10px;
-      font-size: 1.6rem;
-    }
-
-    .bio {
-      text-align: center;
-      color: var(--muted);
-      font-size: .95rem;
-      margin-bottom: 22px;
-    }
-
-    .link {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      text-decoration: none;
-      color: var(--fg);
-      background: linear-gradient(145deg, #111, #1b1b1b);
-      border: 1px solid #2a2a2a;
-      border-radius: 14px;
-      padding: 18px;
-      margin: 12px 0;
-      box-shadow: 0 0 10px rgba(255,255,255,.06);
-      transition: .22s ease;
-    }
-
-    .link:hover {
-      transform: translateY(-1px) scale(1.01);
-      box-shadow: var(--glow);
-    }
-
-    /* 🔹 TÜM ikonlar aynı ölçü ve konum */
-    .icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 8px;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-
-    .ttl { font-weight: 800; letter-spacing: .3px; }
-    .sub { color: var(--muted); font-size: .9rem; }
-
-    footer {
-      margin-top: 14px;
-      font-size: .85rem;
-      text-align: center;
-      color: #9a9a9a;
-    }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-  </style>
+footer{
+  margin-top:20px;
+  text-align:center;
+  font-size:.85rem;
+  color:#888;
+}
+</style>
 </head>
 
 <body>
 <div class="card">
 
-  <!-- ÜST LOGO -->
-  <div class="card__banner">
-    <img src="saydam.png" alt="JOSE MOTO WEAR Logo">
+  <div class="banner">
+    <img src="saydam.png">
   </div>
 
-  <div class="card__body">
+  <div class="body">
     <h1>JOSE MOTO WEAR</h1>
     <div class="bio">Sticker & Aksesuar • Özel sipariş için DM / Mail ✉️</div>
 
-    <!-- 🟢 DOLAP (EN ÜSTTE) -->
-    <a class="link" href="https://link.dolap.com/crdprf" target="_blank" rel="noopener">
-      <img class="icon" src="dolap.gif" alt="Dolap">
+    <a class="link" href="https://link.dolap.com/crdprf">
+      <img class="icon" src="dolap.gif">
       <div>
         <div class="ttl">Dolap Mağazamız</div>
-        <div class="sub">Dolap • Sticker & Aksesuar</div>
+        <div class="sub">Sticker & Aksesuar</div>
       </div>
     </a>
 
-    <!-- SHOPIER -->
-    <a class="link" href="https://www.shopier.com/josemotowear" target="_blank" rel="noopener">
-      <img class="icon" src="IMG_1785.svg" alt="Shopier">
+    <a class="link" href="https://www.shopier.com/josemotowear">
+      <img class="icon" src="shopier.png">
       <div>
-        <div class="ttl">JOSEMOTOWEAR Mağaza</div>
-        <div class="sub">Shopier • Sticker & Aksesuar</div>
+        <div class="ttl">JOSEMOTOWEAR Shopier</div>
+        <div class="sub">Resmi Mağaza</div>
       </div>
     </a>
 
-    <!-- FONT SEÇİM -->
-    <a class="link" href="https://josemotowear.github.io/josemotowearfontnickname/" target="_blank" rel="noopener">
-      <img class="icon" src="google-font-10-17822.gif" alt="Font">
+    <a class="link" href="https://josemotowear.github.io/josemotowearfontnickname/">
+      <img class="icon" src="google-font.gif">
       <div>
         <div class="ttl">Sticker Font Seçimi</div>
-        <div class="sub">Google Fonts • Stencil teması</div>
+        <div class="sub">Google Fonts • Stencil</div>
       </div>
     </a>
 
-    <!-- INSTAGRAM MAĞAZA -->
-    <a class="link" href="https://www.instagram.com/josemotowear" target="_blank" rel="noopener">
-      <img class="icon" src="8227510.gif" alt="Instagram">
+    <a class="link" href="https://instagram.com/josemotowear">
+      <img class="icon" src="instagram.gif">
       <div>
-        <div class="ttl">Instagram • JOSE MOTO WEAR</div>
+        <div class="ttl">Instagram • Mağaza</div>
         <div class="sub">@josemotowear</div>
       </div>
     </a>
 
-    <!-- INSTAGRAM KİŞİSEL -->
-    <a class="link" href="https://www.instagram.com/yusuftoprakk_" target="_blank" rel="noopener">
-      <img class="icon" src="8227510.gif" alt="Instagram">
+    <a class="link" href="https://instagram.com/yusuftoprakk_">
+      <img class="icon" src="instagram.gif">
       <div>
         <div class="ttl">Instagram • Kişisel</div>
         <div class="sub">@yusuftoprakk_</div>
       </div>
     </a>
 
-    <!-- YOUTUBE -->
-    <a class="link" href="https://www.youtube.com/@yusuftoprakk" target="_blank" rel="noopener">
-      <img class="icon" src="spinning-youtube.gif" alt="YouTube">
+    <a class="link" href="https://youtube.com/@yusuftoprakk">
+      <img class="icon" src="youtube.gif">
       <div>
         <div class="ttl">YouTube</div>
         <div class="sub">Motovlog & Shorts</div>
       </div>
     </a>
 
-    <!-- MAIL -->
     <a class="link" href="mailto:josemotowear@gmail.com">
-      <img class="icon" src="6473519.gif" alt="Mail">
+      <img class="icon" src="mail.gif">
       <div>
         <div class="ttl">E-posta</div>
         <div class="sub">josemotowear@gmail.com</div>
       </div>
     </a>
 
-    <footer>
-      © 2025 <a href="https://www.instagram.com/josemotowear" target="_blank">JOSE MOTO WEAR</a>
-      • Tasarım: Yusuf Toprak ⚡️
-    </footer>
-
+    <footer>© 2025 JOSE MOTO WEAR • Yusuf Toprak ⚡️</footer>
   </div>
 </div>
 </body>
